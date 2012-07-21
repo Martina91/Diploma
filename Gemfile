@@ -41,5 +41,12 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 gem 'capistrano'
 
+gem 'haml'
+gem 'hpricot'
+gem 'annotate'
+gem 'json'
+gem 'xml-simple'
+gem 'rmagick'
+
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'

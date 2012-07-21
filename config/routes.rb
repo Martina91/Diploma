@@ -17,4 +17,7 @@ OnlineStore::Application.routes.draw do
     end
     root to: 'store#index', as: 'store'
   end
+#root :to => "dijkstra#run"
+   match 'dijkstra/run' => 'dijkstra#run'
+   #match ':controller(/:action(/:id(.:format)))'
 end

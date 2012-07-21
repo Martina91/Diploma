@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120325135924) do
+ActiveRecord::Schema.define(:version => 20120721122916) do
 
   create_table "carts", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -25,6 +25,21 @@ ActiveRecord::Schema.define(:version => 20120325135924) do
     t.datetime "updated_at",                :null => false
     t.integer  "quantity",   :default => 1
     t.integer  "order_id"
+  end
+
+  create_table "nodes", :force => true do |t|
+    t.string   "osm_id"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "nodes_ways", :force => true do |t|
+    t.integer  "node_id"
+    t.integer  "way_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "orders", :force => true do |t|
@@ -61,6 +76,14 @@ ActiveRecord::Schema.define(:version => 20120325135924) do
     t.string   "salt"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "ways", :force => true do |t|
+    t.string   "osm_id"
+    t.string   "name"
+    t.boolean  "oneway"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
