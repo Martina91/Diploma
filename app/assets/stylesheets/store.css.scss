@@ -1,0 +1,140 @@
+// Place all the styles related to the store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#all {
+width:1100px;
+margin: 0 auto;  
+background: Moccasin;
+}
+
+#banner {
+  background: brown;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman" , serif;
+  color: black;
+  text-align: center;
+  height: 20%;
+}
+
+#header {
+  background: url(images/books.png) repeat-x;
+
+}
+
+#banner img {
+  float: center;
+}
+
+#columns {
+  background: FireBrick;
+  height: 80%;
+}
+
+#main {
+  margin-left: 17em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background: Moccasin;
+ 
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 16em;
+  background: FireBrick;
+}
+
+#side a {
+  color: Khaki;
+  font-size: large;
+}
+
+#footer {
+
+font-size: large;
+text-align: center;
+height: 10%;
+background: brown;
+}
+
+#time {
+  font-size: large;
+text-align: right;
+color: black;
+
+}
+
+#store .entry form, #store .entry form div{
+  display:inline;
+  }
+
+.locale {
+float: right;
+}
+
+#butlog {
+float: right;
+}
+
+#store .cart_title {
+  font: 120% bold;
+}
+
+#store .item_price, #store .total_line {
+  text-align: centre;
+}
+
+#store .total_line .total_cell {
+  font-weight: bold;
+  border-top: 1px solid #595;
+}
+
+#cart, #cart table {
+  font-size: smaller;
+  color:
+  navy;
+}
+
+#cart table {
+  border-top:
+  1px dotted #595;
+  border-bottom: 1px dotted #595;
+  margin-bottom: 10px;
+}
+
+depot_form fieldset {
+  background: #efe;
+}
+
+.depot_form legend {
+  color: #dfd;
+  background: #141;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+}
+
+.depot_form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block;
+}
+
+.depot_form select, .depot_form textarea, .depot_form input {
+  margin-left: 0.5em;
+}
+
+.depot_form .submit {
+  margin-left: 4em;
+}
+
+.depot_form div {
+  margin: 0.5em 0;
+}
